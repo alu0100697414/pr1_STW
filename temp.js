@@ -11,9 +11,24 @@ function conversor (){
   var exp_regular = /(^[-+]?\d+(?:\.\d*)?)([fFcC])/;
 
   // Filtramos en la variable con la expresion regular.
-  var value = ini_temp.match(exp_regular);
+  var valor = ini_temp.match(exp_regular);
 
-  if(value != null){
+  if(valor != null){
+
+    var numero = valor[1];
+    numero = parseFloat(numero); // Pasamos el numero de string a flotante
+
+    var tipo = valor[2];
+
+    if(tipo === 'c' || tipo === 'C'){
+      // Pasamos de C a F
+      var res = ((numero*9)/5)+32;
+      alert(res);
+    } else {
+      // Pasamos de F a C
+      var res = ((numero-32)*5)/9;
+      alert(res);
+    }
 
   } else {
     alert("El valor '" + ini_temp + "' no es correcto. Lea las instrucciones.");
