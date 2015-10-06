@@ -23,12 +23,14 @@ function conversor (){
     if(tipo === 'c' || tipo === 'C'){
       // Pasamos de C a F
       var res = ((numero*9)/5)+32;
-      alert(res);
+      res = "El resultado es: " + String(res) + "F";
     } else {
       // Pasamos de F a C
       var res = ((numero-32)*5)/9;
-      alert(res);
+      res = "El resultado es: " + String(res) + "C";
     }
+
+    resultado.innerHTML = res;
 
   } else {
     alert("El valor '" + ini_temp + "' no es correcto. Lea las instrucciones.");
