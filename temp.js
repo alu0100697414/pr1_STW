@@ -24,12 +24,12 @@ function conversor (){
       // Pasamos de C a F
       var res = ((numero*9)/5)+32;
       res = Math.round(res*100)/100; // Redondeamos a dos decimales
-      res = "El resultado es: " + String(res) + "F";
+      res = "El resultado es: " + String(res) + " F";
     } else {
       // Pasamos de F a C
       var res = ((numero-32)*5)/9;
       res = Math.round(res*100)/100; // Redondeamos a dos decimales
-      res = "El resultado es: " + String(res) + "C";
+      res = "El resultado es: " + String(res) + " C";
     }
 
     resultado.innerHTML = res;

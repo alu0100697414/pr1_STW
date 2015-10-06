@@ -11,14 +11,14 @@
   <body>
     <div id="mocha"></div>
 
-    <center><input type="text" name="ini_temp" value="Ej: 45C"><br><button onclick="conversor()"><b> Enviar </b></button></center>
+    <center><input id="insert" type="text" name="ini_temp" value="Ej: 45C"><br><button onclick="conversor()"><b> Enviar </b></button></center>
     <br>
     <center><div id="resultado"></div></center>
 
     <script src="chai.js"></script>
     <script src="mocha.js"></script>
     <script src="../temp.js"></script>
-    <script>mocha.setup('bdd');</script>
+    <script>mocha.setup('tdd');</script>
     <script src="tests.js"></script>
 
     <script>
