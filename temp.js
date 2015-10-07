@@ -13,7 +13,7 @@ function conversor (){
 
   // Filtramos en la variable con la expresion regular.
   var valor = ini_temp.match(exp_regular_uno);
-
+alert(valor);
   if(valor != null){
 
     var numero = valor[1];
@@ -29,7 +29,7 @@ function conversor (){
 
         while(i < exp){
           div = div * 10;
-          i++; // Vamos por cuanto debemos dividirlo
+          i++; // Vemos por cuanto debemos dividirlo
         }
 
         if(div !== 0) numero = numero/div;
@@ -39,7 +39,7 @@ function conversor (){
 
         while(i < exp){
           div = div * 10;
-          i++; // Vamos por cuanto debemos dividirlo
+          i++; // Vemos por cuanto debemos multiplicarlo
         }
         if(div !== 0) numero = numero*div; // Si es distinto de 0 multiplicamos
       }
