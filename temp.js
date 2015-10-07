@@ -32,7 +32,7 @@ function conversor (){
       res = "El resultado es: " + String(res) + " C";
     }
 
-    resultado.innerHTML = res;
+    resultado.innerHTML = res;  // Mostramos el resultado en el HTML
 
   } else {
     resultado.innerHTML = "El valor '" + ini_temp + "' no es correcto. Lea las instrucciones.";
