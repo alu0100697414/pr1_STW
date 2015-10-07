@@ -35,7 +35,7 @@ function conversor (){
     resultado.innerHTML = res;
 
   } else {
-    alert("El valor '" + ini_temp + "' no es correcto. Lea las instrucciones.");
+    resultado.innerHTML = "El valor '" + ini_temp + "' no es correcto. Lea las instrucciones.";
   }
 
 };
