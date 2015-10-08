@@ -13,7 +13,7 @@ function conversor (){
 
   // Filtramos en la variable con la expresion regular.
   var valor = ini_temp.match(exp_regular_uno);
-alert(valor);
+
   if(valor != null){
 
     var numero = valor[1];
@@ -43,8 +43,6 @@ alert(valor);
         }
         if(div !== 0) numero = numero*div; // Si es distinto de 0 multiplicamos
       }
-
-      alert(numero);
     }
 
     var tipo = valor[3];

@@ -26,12 +26,22 @@ suite('Test de conversor de temperatura', function() {
     test('54.23C == 129.61F', function() {
         insert.value = "54.23C";
         conversor();
-        assert.deepEqual(resultado.innerHTML, "El resultado es: 129.61 F");
+        assert.deepEqual(resultado.innerHTML, "El resultado es: 129.614 F");
     });
     test('-54.23F == -47.91C', function() {
         insert.value = "-54.23F";
         conversor();
-        assert.deepEqual(resultado.innerHTML, "El resultado es: -47.91 C");
+        assert.deepEqual(resultado.innerHTML, "El resultado es: -47.90555555555555 C");
+    });
+    test('-5.23e-4F == -17.7780683C', function() {
+        insert.value = "-5.23e-4F";
+        conversor();
+        assert.deepEqual(resultado.innerHTML, "El resultado es: -17.778068333333334 C");
+    });
+    test('-5.23e-4Celsius == -31.9990586Fahrenheit', function() {
+        insert.value = "-5.23e-4Celsius";
+        conversor();
+        assert.deepEqual(resultado.innerHTML, "El resultado es: 31.9990586 F");
     });
     // assert.match usa una expresion regular
     test('5X = ERROR', function() {
